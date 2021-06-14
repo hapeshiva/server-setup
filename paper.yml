@@ -269,3 +269,26 @@ world-settings:
       maximum: 0.0
     generator-settings:
       flat-bedrock: false
+  world_nether:
+      anti-xray:
+        max-chunk-section-index: 7
+        hidden-blocks:
+        - air
+        - ancient_debris
+        - bone_block
+        - glowstone
+        - magma_block
+        - nether_bricks
+        - nether_gold_ore
+        - nether_quartz_ore
+        - polished_blackstone_bricks
+      replacement-blocks:
+        - basalt
+        - blackstone
+        - gravel
+        - netherrack
+        - soul_sand
+        - soul_soil
+  world_the_end:
+      anti-xray:
+        enabled: false
