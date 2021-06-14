@@ -10,7 +10,6 @@ ___
 
 To run this you need a requests library and Python3. To setup libraries you need command:
 python3 -m pip install requests
-python3 -m pip install ConfigParser
 
 If you cant setup libraries, remove 3 from command.
 
