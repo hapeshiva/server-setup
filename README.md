@@ -7,13 +7,10 @@ ___
 - [X] Create optimized yml
 - [X] Customazible server port and view distance
 - [X] Optimize code
-
+- [X] Start scripts memory
 
 ![Tuinity server core](https://github.com/Tuinity/Tuinity/blob/master/tuinity-logo.webp) https://github.com/Tuinity/Tuinity
 
-To run this you need a requests library and Python3. To setup libraries you need command:
-python3 -m pip install requests
-
-If you cant setup libraries, remove 3 from command.
+To run setup you need a Python3.
 
 Thanks for using!
