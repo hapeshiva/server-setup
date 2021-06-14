@@ -52,9 +52,10 @@ if core.casefold().startswith("y"):
     shutil.move("paper.yml", server_path)
     shutil.move("tuinity.yml", server_path)
     print("Server is ready! Move start.bat (Windows) or start.sh (Linux) to \"server\" directory. Go to server directory and test! Thanks for using hapeshiva server setup\n Optimization created with this guide: https://www.spigotmc.org/threads/guide-server-optimization%E2%9A%A1.283181/")
+    print("Please configure mob-spawn-range in spigot.yml for your view distance (vd * 16)") 
 if core.casefold().startswith("y") == False:
     print("Server is ready! Move start.bat (Windows) or start.sh (Linux) to \"server\" directory. Go to server directory and test! Thanks for using hapeshiva server setup\n ")
-
+    print("Please configure mob-spawn-range in spigot.yml for your view distance (vd * 16)") 
 input = input("Press any key to close")
 if input != "dontclose":
     exit()
