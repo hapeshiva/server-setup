@@ -5,7 +5,6 @@ ___
 
 - [X] Support for optimization
 - [X] Create optimized yml
-=======
 - [X] Customazible server port and view distance
 - [X] Optimize code
 
