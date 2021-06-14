@@ -27,7 +27,7 @@ if (sys.version_info > (3, 0)):
     print("Python 3 has been detected you may continue\n")
 else:
     exit("Python 2 has been detected please run in Python3!")
-server_core = "tuinity_paperclip.jar"
+server_core = "tuinity-paperclip.jar"
 server_path = "server"
 maxmem = float(psutil.virtual_memory().total / 1000000000)
 tuinity_url = "https://ci.codemc.io/job/Spottedleaf/job/Tuinity/lastSuccessfulBuild/artifact/tuinity-paperclip.jar"
@@ -54,7 +54,7 @@ def CheckJar():
             Download()
     else:
         Download()
-    
+
 #Download Tuinity Jar /
 def Download():
     print("Downloading Jar...")
@@ -100,7 +100,7 @@ def CreateStartScripts():
         os.remove(server_path + "/start.sh")
     if exists(server_path + "/start.bat"):
         os.remove(server_path + "/start.bat")
-    
+
     sh = open("start.sh", "w")
     bat = open("start.bat", "w")
     sh.write("java -Xms"+mem+"G -Xmx"+mem+"G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar tuinity-paperclip.jar nogui")
@@ -182,7 +182,7 @@ def End():
     end = input("Press any key to close...")
     if end != "dontclose":
         exit()
-    
+
 CheckJar()
 UserInput()
 CreateStartScripts()
