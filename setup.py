@@ -33,7 +33,6 @@ maxmem = float(psutil.virtual_memory().total / 1000000000)
 tuinity_url = "https://ci.codemc.io/job/Spottedleaf/job/Tuinity/lastSuccessfulBuild/artifact/tuinity-paperclip.jar"
 
 print("hapeshiva server setup")
-print(maxmem)
 def UserInput():
     global memory
     global optimise
