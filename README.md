@@ -5,12 +5,10 @@ ___
 
 - [X] Support for optimization
 - [X] Create optimized yml
-<<<<<<< Updated upstream
 =======
 - [X] Customazible server port and view distance
 - [X] Optimize code
 
->>>>>>> Stashed changes
 
 ![Tuinity server core](https://github.com/Tuinity/Tuinity/blob/master/tuinity-logo.webp) https://github.com/Tuinity/Tuinity
 
