@@ -532,7 +532,7 @@ def End():
             print("Please enter yes or no")
         else:
             if rm.casefold().startswith("y"):
-                print("removing original yml files and removing the jar outside of server")
+                print("\nRemoving original yml files and removing the jar outside of server")
                 try:
                     if exists("bukkit.yml"):
                         os.remove("bukkit.yml")
@@ -547,7 +547,8 @@ def End():
                 except Exception as e:
                     print("Could not delete one or more configs: ", e)
                 else:
-                    print("Cleaned up!")
+                    print("\nCleaned up!")
+                    break
             elif rm.casefold().startswith("n"):
                 print("Keeping temp files")
                 break
