@@ -2,10 +2,10 @@
 # As you can see, there's actually not that much to configure without any plugins.
 # For a reference for any variable inside this file, check out the Bukkit Wiki at
 # https://www.spigotmc.org/go/bukkit-yml
-# 
+#
 # If you need help on this file, feel free to join us on irc or leave a message
 # on the forums asking for advice.
-# 
+#
 # IRC: #spigot @ irc.spi.gt
 #    (If this means nothing to you, just go to https://www.spigotmc.org/go/irc )
 # Forums: https://www.spigotmc.org/
@@ -24,18 +24,18 @@ settings:
   shutdown-message: Server closed
   minimum-api: none
 spawn-limits:
-  monsters: 15
-  animals: 5
-  water-animals: 1
-  water-ambient: 1
+  monsters: 16
+  animals: 8
+  water-animals: 2
+  water-ambient: 2
   ambient: 0
 chunk-gc:
   period-in-ticks: 400
 ticks-per:
-  animal-spawns: 400
-  monster-spawns: 5
-  water-spawns: 11
-  water-ambient-spawns: 21
-  ambient-spawns: 31
-  autosave: 6000
+  animal-spawns: 400 # 20 seconds
+  monster-spawns: 10 # 0.5 seconds
+  water-spawns: 400  # 20 seconds
+  water-ambient-spawns: 200 # 10 seconds
+  ambient-spawns: 0 #disabled
+  autosave: 6000    #300 Seconds (overrided on paper)
 aliases: now-in-commands.yml
